@@ -1,0 +1,26 @@
+{
+  "tslint.autoFixOnSave": true,
+  "emmet.triggerExpansionOnTab": true,
+  "files.associations": { "*.js": "javascriptreact" },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.syntaxProfiles": { "javascript": "html" },
+  "auto-close-tag.activationOnLanguage": [
+    "xml",
+    "php",
+    "blade",
+    "ejs",
+    "jinja",
+    "javascript",
+    "typescript",
+    "plaintext",
+    "markdown",
+    "vue",
+    "liquid",
+    "erb",
+    "lang-cfml",
+    "cfml",
+    "HTML (Eex)"
+  ]
+}
