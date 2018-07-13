@@ -16,6 +16,9 @@
 .env.test.local
 .env.production.local
 
+.history
+.vscode
+
 # css
 /src/**/*.css
 
