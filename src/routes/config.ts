@@ -1,18 +1,26 @@
-export interface InterfaceMenuList {
-  [key: string]: InterfaceMenuItem
+import { Component } from 'react';
+import __dev_import__ from './_import_development'
+import __pro_import__ from './_import_production'
+
+const importComponent = process.env.NODE_ENV === 'production' ? __pro_import__ : __dev_import__
+
+export interface IMenuList {
+  [key: string]: IMenuItem
 }
 
-export interface InterfaceMenuItem {
+export interface IMenuItem {
   id: string
   title: string
+  component? : Component
   icon?: string
-  subs?: InterfaceMenuItem[]
+  subs?: IMenuItem[]
 }
 
-export const MenuList: InterfaceMenuList = {
+export const MenuList: IMenuList = {
   JS: {
     id: '01',
     title: 'InterestingJS',
+    component: importComponent(''),
     icon: '',
     subs: []
   },
@@ -30,12 +38,6 @@ export const MenuList: InterfaceMenuList = {
         id: '022',
         title: 'AmazingAnimation',
         icon: ''
-        // subs: [
-        //   {
-        //     id: '0221',
-        //     title: 'test'
-        //   }
-        // ]
       }
     ]
   },

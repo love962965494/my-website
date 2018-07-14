@@ -1,11 +1,11 @@
 import { Grow, MenuItem, MenuList, Paper } from '@material-ui/core'
 import React, { Component } from 'react'
 import { Manager, Popper, Target } from 'react-popper'
-import { InterfaceMenuItem } from 'routes/config'
+import { IMenuItem } from 'routes/config'
 
 interface InterfaceRenderMenuItem {
   popperOpen: boolean
-  menuItem: InterfaceMenuItem
+  menuItem: IMenuItem
   onPopperChange: (state: boolean) => void
 }
 
