@@ -1,7 +1,6 @@
 import ActionTypes from 'actions/ActionTypes'
 import { DeepPartial, Reducer, StoreCreator, StoreEnhancer } from 'redux'
 import IStoreState from 'store/IStoreState'
-import InitialState from './InitialState'
 
 const round = (roundNumber: number) => Math.floor(roundNumber * 100) / 100
 
@@ -14,7 +13,7 @@ const round = (roundNumber: number) => Math.floor(roundNumber * 100) / 100
  */
 const monitorReducerEnhancer = (createStore: StoreCreator) => (
   reducer: Reducer,
-  initialState: DeepPartial<typeof InitialState>,
+  initialState: DeepPartial<any>,
   enhancer: StoreEnhancer
 ) => {
   const monitorReducer = (state: IStoreState, action: ActionTypes) => {

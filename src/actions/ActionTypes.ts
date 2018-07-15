@@ -1,12 +1,8 @@
-import ActionTypeKeys from "./ActionTypeKeys";
-
-interface ITest {
-  type: ActionTypeKeys
-}
+import AppActionTypes from './app/appActionInterface'
 
 /**
  * all action types
  */
-type ActionTypes = ITest
+type ActionTypes = AppActionTypes
 
 export default ActionTypes

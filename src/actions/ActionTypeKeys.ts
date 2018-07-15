@@ -1,7 +1,8 @@
+import { AppActionTypeKeys } from './app/appActionInterface'
 
 /**
  * the keys of all action types
  */
-enum ActionTypeKeys {}
+type ActionTypeKeys = AppActionTypeKeys
 
 export default ActionTypeKeys

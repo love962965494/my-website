@@ -5,5 +5,7 @@
  * @interface IStoreState
  */
 export default interface IStoreState {
-  [propName: string]: any
+  app: {
+    isMobile: boolean
+  }
 }
