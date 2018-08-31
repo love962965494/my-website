@@ -1,8 +1,8 @@
-import AppActionTypes from './app/appActionInterface'
-
 /**
- * all action types
+ * 所有actionType的汇总
  */
-type ActionTypes = AppActionTypes
+interface ITemp {
+  test: string
+}
 
-export default ActionTypes
+export default ITemp

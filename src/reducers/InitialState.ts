@@ -1,12 +1,8 @@
-import IStoreState from 'store/IStoreState'
+import IStoreState from "store/IStoreState";
 
-/**
- * the default value of state
- */
 const defaultState: IStoreState = {
-  app: {
-    isMobile: false
-  }
+  app: {},
+  api: {}
 }
 
 export default defaultState

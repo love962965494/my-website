@@ -1,11 +1,6 @@
-/**
- * the data structure of state
- *
- * @export
- * @interface IStoreState
- */
-export default interface IStoreState {
-  app: {
-    isMobile: boolean
-  }
+interface IStoreState {
+  app: {}
+  api: {}
 }
+
+export default IStoreState

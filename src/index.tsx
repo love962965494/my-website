@@ -4,10 +4,9 @@ import * as ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 import InitialState from 'reducers/InitialState'
 import registerServiceWorker from 'registerServiceWorker'
-import configureStore from 'store/configureStore'
-import './index.css'
+import Store from 'store'
 
-const store = configureStore(InitialState)
+const store = Store(InitialState)
 
 const renderPage = (Content: typeof Page) => {
   ReactDOM.render(

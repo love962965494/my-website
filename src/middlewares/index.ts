@@ -1,7 +1,5 @@
-import logger from './logger'
+import { Middleware } from 'redux'
 
-const middlewares = [
-  logger
-]
+const Middlewares: Middleware[] = []
 
-export default middlewares
+export default Middlewares
